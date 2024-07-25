@@ -1,3 +1,9 @@
-import { Routes } from '@angular/router';
+export const appPaths = {
+  home: '',
+  error404: '404',
+};
 
-export const routes: Routes = [];
+export const appRoutes = {
+  home: `/${appPaths.home}`,
+  error404: `/${appPaths.error404}`,
+};
