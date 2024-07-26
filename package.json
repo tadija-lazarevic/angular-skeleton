@@ -2,7 +2,7 @@
   "name": "skeleton",
   "version": "0.0.0",
   "scripts": {
-    "prepare": "husky",
+    "prepare": "husky install",
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
