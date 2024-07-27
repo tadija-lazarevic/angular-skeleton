@@ -1,0 +1,13 @@
+<ng-container *ngIf="todos$ | async; let myData">
+  <!-- <div *ngFor="let o of myData">{{ o.todo }}</div> -->
+
+  <p-scrollPanel [style]="{ width: '100%', height: 'calc(100vh - 150px)' }">
+    @for (item of myData; track $index) {
+      <p-card
+        [styleClass]="currentUser.id === item.userId ? 'mt-5 bg-pink-500' : 'mt-5'"
+        [header]="'Card ' + item.id.toString()">
+        {{ item.todo }}</p-card
+      >
+    }
+  </p-scrollPanel>
+</ng-container>

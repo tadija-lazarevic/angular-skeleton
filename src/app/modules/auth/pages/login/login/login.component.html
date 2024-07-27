@@ -1,0 +1,51 @@
+<div class="flex flex-row flex-wrap align-items-center justify-content-center">
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="flex flex-column mt-5">
+      <label class="mb-2" for="username">Username</label>
+      <input formControlName="username" pInputText id="username" aria-describedby="username-help" />
+      <span
+        *ngIf="
+          formGroup.get('username')?.touched && formGroup.get('username')?.hasError('required')
+        ">
+        Username is required
+      </span>
+      <span
+        *ngIf="
+          formGroup.get('username')?.touched && formGroup.get('username')?.hasError('minlength')
+        ">
+        Min characters is {{ USERNAME_MIN_LENGTH }}</span
+      >
+    </div>
+
+    <div class="flex flex-column mt-5">
+      <label class="mb-2" for="username">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        pInputText
+        aria-describedby="username-help" />
+
+      <span
+        *ngIf="
+          formGroup.get('password')?.touched && formGroup.get('password')?.hasError('required')
+        ">
+        Username is required
+      </span>
+      <span
+        *ngIf="
+          formGroup.get('password')?.touched && formGroup.get('password')?.hasError('minlength')
+        ">
+        Min characters is {{ USERNAME_MIN_LENGTH }}</span
+      >
+    </div>
+
+    <div class="flex flex-row align-items-center justify-content-center align-content-center mt-5">
+      <p-button
+        type="submit"
+        size="large"
+        styleClass="bg-gray-900 border-transparent"
+        label="Login" />
+    </div>
+  </form>
+</div>

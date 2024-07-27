@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiHost: 'http://localhost:3000/',
+  apiUrl: 'https://dummyjson.com/',
   domain: 'http://localhost:4200',
 };

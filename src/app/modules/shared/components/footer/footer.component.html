@@ -1,0 +1,12 @@
+<footer>
+  <p-toolbar styleClass="bg-gray-900 shadow-2">
+    <ng-template pTemplate="center">
+      <div class="flex flex-wrap align-items-center gap-3"></div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex align-items-center gap-2">
+        <span class="font-bold text-bluegray-50" [innerHTML]="'@' + (year | date: 'yyyy')"> </span>
+      </div>
+    </ng-template>
+  </p-toolbar>
+</footer>
