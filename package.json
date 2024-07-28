@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "prepare": "husky install",
-    "ng": "ng",
     "start": "ng serve -o",
-    "start-de": "ng serve --configuration=ru --o",
+    "start:de": "ng serve --configuration=de --o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
