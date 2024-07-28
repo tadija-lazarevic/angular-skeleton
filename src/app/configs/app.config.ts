@@ -1,8 +1,9 @@
 import { InjectionToken } from '@angular/core';
 import { IAppConfig } from './app.config.interface';
-import { environment } from '~environments/environment';
 
 export const APP_CONFIG = new InjectionToken('app.config');
+
+const API_URL = 'https://dummyjson.com/';
 
 export const AppConfig: IAppConfig = {
   bypassAuthorization: 'bypassAuthorization',
@@ -13,8 +14,8 @@ export const AppConfig: IAppConfig = {
     en: 'en',
   },
   endpoints: {
-    apiUrl: environment.apiUrl,
-    login: `${environment.apiUrl}auth/login`,
-    getTodos: `${environment.apiUrl}todos`,
+    apiUrl: API_URL,
+    login: `${API_URL}auth/login`,
+    getTodos: `${API_URL}todos`,
   },
 };

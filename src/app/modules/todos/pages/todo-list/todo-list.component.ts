@@ -37,7 +37,8 @@ export class TodoListComponent implements OnInit {
     );
   }
 
-  get currentUser(): User {
-    return JSON.parse(this.authService.getUser());
+  // TASK 4
+  get currentUser(): User | null {
+    return this.authService.getUser();
   }
 }

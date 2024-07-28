@@ -17,10 +17,12 @@ import { environment } from '~environments/environment';
 import { baseInterceptor } from '~shared/interceptors/base.interceptor';
 import { APP_CONFIG, AppConfig } from './configs/app.config';
 import { authInterceptor } from '~shared/interceptors/auth.interceptor';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
+    provideAnimations(),
 
     // Routes configuration
     provideRouter([

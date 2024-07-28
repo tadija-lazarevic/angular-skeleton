@@ -7,6 +7,6 @@ import { TodoAddComponent } from './pages/todo-add/todo-add.component';
 
 export const TODO_ROUTES: Route[] = [
   { path: todosPaths.base, component: TodoListComponent, canActivate: [authenticationGuard] },
-  { path: todosPaths.add, component: TodoAddComponent, canActivate: [authenticationGuard] },
+  { path: todosPaths.add, component: TodoAddComponent, canActivate: [authenticationGuard] }, // TASK 5
   { path: '**', redirectTo: appPaths.home },
 ];

@@ -1,11 +1,11 @@
 export const todosPaths = {
   base: '',
   list: 'todos',
-  add: 'add',
+  add: 'add', // TASK 5
 };
 
 export const todosRoutes = {
   base: `/${todosPaths.base}`,
   list: `/${todosPaths.list}`,
-  add: `/${todosPaths.list}/${todosPaths.add}`,
+  add: `/${todosPaths.list}/${todosPaths.add}`, // TASK 5
 };

@@ -10,11 +10,12 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 import { todosPaths } from '~modules/todos/pages/todos.routes';
 import { AuthService } from '~modules/auth/services/auth.service';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule, InputTextModule, ButtonModule, NgIf],
+  imports: [ReactiveFormsModule, InputTextModule, ButtonModule, NgIf, DividerModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })

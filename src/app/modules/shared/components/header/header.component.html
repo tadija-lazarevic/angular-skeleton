@@ -20,10 +20,15 @@
   </ng-template>
   <ng-template pTemplate="end">
     <div class="flex align-items-center gap-2">
-      <span class="font-bold text-bluegray-50"> Amy Elsner </span>
+      <!-- TASK 1 -->
+      <span (click)="menu.toggle($event)" class="font-bold text-bluegray-50 cursor-pointer">
+        <!-- TASK 2-->
+        {{ currentUser?.firstName + ' ' + currentUser?.lastName }}
+      </span>
+      <p-menu #menu [model]="items" [popup]="true" />
       <p-avatar
         image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-        shape="circle" />
+        shape="circle"></p-avatar>
     </div>
   </ng-template>
 </p-toolbar>
