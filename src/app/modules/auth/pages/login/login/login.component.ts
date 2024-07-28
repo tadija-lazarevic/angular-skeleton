@@ -24,6 +24,9 @@ export class LoginComponent {
   readonly PASSWORD_MIN_LENGTH = 5;
   destroyRef = inject(DestroyRef);
 
+  company = 'Lokalise';
+  created_by = $localize`Created by ${this.company}`;
+
   formGroup: FormGroup = new FormGroup({
     username: new FormControl<string>('', [
       Validators.minLength(this.USERNAME_MIN_LENGTH),

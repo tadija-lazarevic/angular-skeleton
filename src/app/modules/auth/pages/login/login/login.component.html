@@ -5,8 +5,9 @@
       [formGroup]="formGroup"
       (ngSubmit)="onSubmit()">
       <div class="flex flex-wrap justify-content-center align-items-center gap-2">
-        <label class="mb-2" for="username">Username</label>
+        <label i18n class="mb-2" for="username">Username</label>
         <input
+          i18n
           formControlName="username"
           pInputText
           id="username"
@@ -25,7 +26,7 @@
         >
       </div>
       <div class="flex flex-wrap justify-content-center align-items-center gap-2">
-        <label class="mb-2" for="username">Password</label>
+        <label i18n class="mb-2" for="username">Password</label>
         <input
           type="password"
           id="password"
@@ -34,23 +35,28 @@
           aria-describedby="username-help" />
 
         <span
+          i18n
           *ngIf="
             formGroup.get('password')?.touched && formGroup.get('password')?.hasError('required')
           ">
           Username is required
         </span>
         <span
+          i18n
           *ngIf="
             formGroup.get('password')?.touched && formGroup.get('password')?.hasError('minlength')
           ">
           Min characters is {{ USERNAME_MIN_LENGTH }}</span
         >
       </div>
-      <p-button
+      <button
+        icon="fa fa-sign-in"
+        class="bg-gray-900 border-transparent"
+        pButton
         type="submit"
-        size="large"
-        styleClass="bg-gray-900 border-transparent"
-        label="Login" />
+        size="large">
+        <span i18n>Login</span>
+      </button>
     </form>
   </div>
   <div class="w-full md:w-2">
@@ -63,11 +69,10 @@
   </div>
 
   <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
-    <p-button
-      disabled
-      size="large"
-      label="Sign Up"
-      icon="pi pi-user-plus"
-      styleClass="p-button-success w-10rem" />
+    <button pButton class="p-button-success w-10rem" disabled size="large" icon="fa fa-user-plus">
+      <span i18n>Sign Up</span>
+    </button>
   </div>
+
+  {{ created_by }}
 </div>

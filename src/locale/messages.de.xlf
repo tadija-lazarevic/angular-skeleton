@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-lanuage="de">
+    <body>
+      <trans-unit id="5248717555542428023" datatype="html">
+        <source>Username</source>
+        <target>Korisnicko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1431416938026210429" datatype="html">
+        <source>Password</source>
+        <target>Sifra</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1517103645540207391" datatype="html">
+        <source> Username is required </source>
+        <target>Korisnicko obavezno</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1995161543361390357" datatype="html">
+        <source> Min characters is <x id="INTERPOLATION" equiv-text="{{ USERNAME_MIN_LENGTH }}"/></source>
+        <target>Najmanji broj karaktera je <x id="INTERPOLATION" equiv-text="{{ USERNAME_MIN_LENGTH }}"/></target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <target>Uloguj se</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <target>Registruj se</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="3990133897753911565" datatype="html">
+        <source>Created by <x id="PH" equiv-text="this.company"/></source>
+        <target>Napravljeno od <x id="PH" equiv-text="this.company"/></target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/auth/pages/login/login/login.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
