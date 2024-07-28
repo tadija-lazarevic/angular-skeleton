@@ -3,13 +3,14 @@
 - [Primeng](https://primeng.org/) and [Primeflex](https://primeflex.org/) used for layout and
   styling
 - [DummyJson](https://dummyjson.com/) used for data prototyping
-- Eslint and Prettier included
+- Eslint and Prettier included for code formatting and linting
 - [SourceMapExplorer](https://github.com/danvk/source-map-explorer) used for bundle size inspection
 - [ConventionalCommits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#specification) used
   for formatting git commits
 - [Class-validator](https://github.com/typestack/class-validator) package added for additional
   validation.
 - angular/localize included
+- [Font awesome icons](https://fontawesome.com/v4/icons/) package used as icons package
 
 # Skeleton
 
