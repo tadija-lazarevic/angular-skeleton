@@ -5,8 +5,6 @@ import { AvatarModule } from 'primeng/avatar';
 import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
-import { AuthService } from '~modules/auth/services/auth.service';
-import User from '~shared/interfaces/user';
 
 @Component({
   selector: 'app-header',
@@ -18,13 +16,6 @@ import User from '~shared/interfaces/user';
 export class HeaderComponent implements OnInit {
   items: MenuItem[] = [];
 
-  constructor(private authService: AuthService) {}
-
-  // TASK
-  get currentUser(): User | null {
-    return this.authService.getUser();
-  }
-
   ngOnInit() {
     this.items = [
       {
@@ -33,8 +24,6 @@ export class HeaderComponent implements OnInit {
           {
             label: 'Logout',
             icon: 'fa fa-sign-out',
-            // TASK 3
-            command: () => this.authService.logout(),
           },
         ],
       },

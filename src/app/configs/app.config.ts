@@ -17,5 +17,7 @@ export const AppConfig: IAppConfig = {
     apiUrl: API_URL,
     login: `${API_URL}auth/login`,
     getTodos: `${API_URL}todos`,
+    postTodo: `${API_URL}todos/add`,
+    deleteTodo: `${API_URL}todos/:id`,
   },
 };

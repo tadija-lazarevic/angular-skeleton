@@ -20,11 +20,7 @@
   </ng-template>
   <ng-template pTemplate="end">
     <div class="flex align-items-center gap-2">
-      <!-- TASK 1 -->
-      <span (click)="menu.toggle($event)" class="font-bold text-bluegray-50 cursor-pointer">
-        <!-- TASK 2-->
-        {{ currentUser?.firstName + ' ' + currentUser?.lastName }}
-      </span>
+      <span (click)="menu.toggle($event)" class="font-bold text-bluegray-50"> User 1 </span>
       <p-menu #menu [model]="items" [popup]="true" />
       <p-avatar
         image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"

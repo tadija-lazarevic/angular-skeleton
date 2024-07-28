@@ -10,5 +10,7 @@ export interface IAppConfig {
     apiUrl: string;
     login: string;
     getTodos: string;
+    postTodo: string;
+    deleteTodo: string;
   };
 }
