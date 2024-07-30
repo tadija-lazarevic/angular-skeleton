@@ -19,7 +19,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The
+Before running local server we need to install packages by running `npm install`. After that run
+`ng serve` or `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The
 application will automatically reload if you change any of the source files.
 
 ## Localization
@@ -59,7 +60,12 @@ logout by clicking on username/logout button.
 Its a todo application wich showacase angular core features like components, services, routing,
 guards, service injection...
 
-## Tasks
+## Prerequisites
+
+- Visual studio Code Extensions: -- Prettier -- Eslint -- Angular Essentials -- Angular language
+  service -- Angular snippets -- Code spell checker
+
+- Tools -- Git -- Npm 9.6.4 (or greater) -- Node 20.0.0 -- Angular cli - npm i @angular/cli@18
 
 1. Using https://primeflex.org/ class add cursor pointer style to span which shows currently logged
    user (User 1).
