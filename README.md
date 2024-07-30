@@ -58,3 +58,21 @@ logout by clicking on username/logout button.
 
 Its a todo application wich showacase angular core features like components, services, routing,
 guards, service injection...
+
+## Tasks
+
+1. Using https://primeflex.org/ class add cursor pointer style to span which shows currently logged
+   user (User 1).
+2. When logged in, User can see User 1 name at the top right corner. Inject auth service, and use it
+   to get current user to show first name and last name instead.
+3. When logged in, User can click on User 1 and then on Logout button which does nothing for now.
+   Add action to menu item which will call auth service and logout function.
+4. Open todo list page. Todo object has userId property which shows to which user todo belongs. Add
+   custom class when todo userId is equal to user id to mark those todos.
+5. Generate new component in modules/shared/card which will have Inputs text, isOwner, header. Pass
+   those props from todo list component.
+6. Generate new component in modules/todo/pages folder, which will allow user to create new Todo.
+   Name it todo-add. Open todos/pages/todo.routes.ts and add “add” path and route to objects. Open
+   pages/todo.routes.ts and use added properties to create new route. Go back to TodoAddComponent
+   and create form for adding todos. Upon creation of one todo, user should be redirected to
+   todos-list.
